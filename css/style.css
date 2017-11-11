@@ -1,0 +1,150 @@
+body {
+    font-family: 'MicroSoft YaHei', Helvetica;
+    font-size: 14px;
+    color: #222222;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100% !important;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    margin: 0;
+    padding: 0;
+    background: #bddbe6;
+    overflow: hidden;
+}
+.bg-img{width: 100%;position: absolute;bottom:0;left: 0;z-index: -1;}
+.dice-outer{position: relative}
+.pop-box{width:180px;height:180px;position:absolute;left: -90px;margin: 50% 0 0 50%;}
+.bgs {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.bgs > li {
+    list-style: none;
+    float: left;
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 1px;
+}
+.wrap{width:90px; height:90px; margin:auto;position: relative; float: left;}
+.dice{width:90px; height:90px;margin: auto; background:url(../images/dice.png) no-repeat;}
+.dice_1{background-position:-5px -4px}
+.dice_2{background-position:-5px -107px}
+.dice_3{background-position:-5px -212px}
+.dice_4{background-position:-5px -317px}
+.dice_5{background-position:-5px -427px}
+.dice_6{background-position:-5px -535px}
+.dice_t{background-position:-5px -651px}
+.dice_s{background-position:-5px -763px}
+.dice_e{background-position:-5px -876px}
+p#result,p#result2{text-align:center; font-size:16px;color: #fff}
+p#result span, p#result2 span{font-weight:bold; color:#f30; margin:6px}
+.btn1{width: 210px;height: 45px;outline:none;text-align: center;  line-height: 34px;  font-size: 20px;  background: #fe5b2f;  color: #fff;  border: 3px solid #e0ae90;  margin: -20px -105px;  position: absolute;  top: 60%;  left: 50%;  display: block;  border-radius: 50px;}
+.shade {
+    width: 90px;
+    height: 90px;
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -45px;
+    display: none;
+}
+.dice-content {
+    width: 240px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    margin-top: 30%;
+}
+.car{
+    width: 31px;
+    overflow: hidden;
+    height: 60px;
+    position: absolute;
+    top:-20px;
+    left: 15px;
+    z-index: 100;
+}
+.an1{
+    background: url("../images/person.png");
+    -webkit-animation: myfirst 0.8s steps(6) infinite;
+    -moz-animation: myfirst 0.8s steps(6) infinite;
+    -ms-animation: myfirst 0.8s steps(6) infinite;
+    -o-animation: myfirst 0.8s steps(6) infinite;
+    animation: myfirst 0.8s steps(6) infinite ;
+}
+.an2{
+    background: url("../images/person1.png");
+    -webkit-animation: myfirst 0.8s steps(6) infinite;
+    -moz-animation: myfirst 0.8s steps(6) infinite;
+    -ms-animation: myfirst 0.8s steps(6) infinite;
+    -o-animation: myfirst 0.8s steps(6) infinite;
+    animation: myfirst 0.8s steps(6) infinite ;
+}
+@keyframes myfirst
+{
+    from { background-position:0px; }
+    to { background-position: -188px; }
+}
+@-moz-keyframes myfirst
+{
+    from { background-position:0px; }
+    to { background-position: -188px; }
+}
+@-webkit-keyframes myfirst
+{
+    from { background-position:0px; }
+    to { background-position: -188px; }
+}
+@-o-keyframes myfirst
+{
+    from { background-position:0px; }
+    to { background-position: -188px; }
+}
+.pop{position: absolute;top:0;left: 0;background: rgba(0,0,0,0.7);width: 100%;height: 100%;z-index: 9999;display: none;}
+.sz{width: 80px;height: 80px;margin: 40px auto; display: block;}
+.bg{color: #fff;-webkit-text-stroke:1px #532009;font-size: 30px;font-family: "黑体";font-weight: 900;}
+.bg0{background: #e30218;}
+.bg1{background: #00a7ea;}
+.bg2{background: #82ba2f;}
+.bg3{background: #febd00;}
+.bg4{background: #fd92c1;}
+.bg5{background: #f6fb38;}
+.bg6{background: #b183da;}
+.bg7{background: #40b2a3;}
+.bg8{background: #6958e8;}
+.bg9{background: #f08400;}
+.bg10{background: #82bb2f;}
+.bg11{background: #ffb87f;}
+.bg12{background: #00a7ea;}
+.bg13{background: #f08400;}
+.bg14{background: #ea68a1;}
+.bg15{background: #e62d89;}
+.bg16{background: #fef100;}
+.bg17{background: #009a44;}
+.bg18{background: #f08302;}
+.start{width: 46px;margin-top: 11px;}
+.end{background: #e50013;}
+.end img{width: 50px;margin-top: 16px;}
+.person{height: 60px;}
+.icon-palce{ width: 44px; margin-top: 7px;border-radius: 7px;}
+.gift{width: 150px;height: 150px;margin:50% auto;display: block;}
+.opens{width: 20px; height: 20px; position: absolute; right: 26px; top: 25px; opacity: 0.9;}
+.box-sorry{ position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;width: 250px;height: 320px;background: #fffaf2;border:7px solid #ffe288;border-radius: 7px;}
+.word{font-size: 26px;color: #894a13;width: 100%;line-height:12px;text-align: center;}
+.word1{color: #333;font-size: 14px;}
+.sad{width: 150px;margin: 0 auto;display: block;}
+.btn-one{width: 80%;height: 40px;outline:none;line-height: 40px;font-size: 16px;color: #fff;background: #ffa546;border-radius: 50px;border: 0;text-align: center;border-bottom: 2px solid #e2b3a2; margin: 20px 10%;}
+.mar-top{margin-top: 50px;}
+.open{width: 26px;height: 26px;position: absolute;top:7px;right: 7px;}
+.box-gift{border: 7px solid #ffb87f;height: 250px;}
+.title-top{width: 40%;  height: 40px;  background: #ffb87f;  color: #7a371a;  text-align: center;  position: absolute;  top: -5px;  left: 50%;  border-radius: 5px;  margin: 0 -20%;  line-height: 40px;  font-size: 16px;}
+.suc-word{font-size: 16px;color:#7a371a;margin: 60px auto 0;}
+.word2{color: #ff5646;font-size: 16px;font-family: '黑体';}
+.img-gift{width: 80%;}
+.sad1{width: 95px;}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>点点联|大富翁</title>
+</head>
+<body>
+<section>
+    <img src="images/bg1.jpg" class="bg-img">
+    <div class="pop" id="pop">
+        <div class="pop-box">
+            <div class="wrap">
+                <div id="dice" class="dice dice_1"></div>
+            </div>
+            <div class="wrap">
+                <div id="dice1" class="dice dice_1"></div>
+            </div>
+            <p id="result2">您还有 <span class="num_ci" id="num_item"></span>次机会！</p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <input type="hidden" value="1" class="num_ci">
+    <section class="dice-content">
+        <div class="car an1"></div>
+        <ul class="bgs">
+            <li class="bg0"><img src="images/start.jpg" class="start"/></li>
+            <li class="bg1 bg">1</li>
+            <li class="bg2 bg"><img src="images/icon2.png" class="icon-palce"/></li>
+            <li class="bg3 bg">3</li>
+        </ul>
+        <ul class="bgs">
+            <li class=""></li>
+            <li class=""></li>
+            <li class=""></li>
+            <li class="bg4 bg">4</li>
+        </ul>
+        <ul class="bgs">
+            <li class="bg8 bg">8</li>
+            <li class="bg7 bg"><img src="images/icon3.png" class="icon-palce"/></li>
+            <li class="bg6 bg">6</li>
+            <li class="bg5 bg">5</li>
+        </ul>
+        <ul class="bgs">
+            <li class="bg9 bg">9</li>
+            <li class=""></li>
+            <li class=""></li>
+            <li class=""></li>
+        </ul>
+        <ul class="bgs">
+            <li class="bg10 bg"><img src="images/icon1.png" class="icon-palce"/></li>
+            <li class="bg11 bg">11</li>
+            <li class="bg12 bg">12</li>
+            <li class="end"><img src="images/end.jpg"/></li>
+        </ul>
+        <!--<ul class="bgs">-->
+            <!--<li class="bg13 bg">13</li>-->
+            <!--<li class="bg12 bg">12</li>-->
+            <!--<li class="bg11 bg"><img src="images/icon5.png" class="icon-palce"/></li>-->
+            <!--<li class="bg10 bg">10</li>-->
+            <!--<li class="bg9 bg">9</li>-->
+        <!--</ul>-->
+    </section>
+    <div>
+        <img src="images/saizi.png" class="sz" id="btn"/>
+    </div>
+    <div class="pop" id="gift-pop">
+        <img src="images/gift.png" class="gift"/>
+        <button class="btn1" id="btn1">立即领取</button>
+        <img src="images/opens.png" class="opens" id="opens"/>
+    </div>
+    <div class="pop" id="sorry">
+        <div class="box-sorry">
+            <img src="images/open2.png" class="open" id="open-sorry">
+            <p class="word mar-top">很遗憾</p>
+            <p class="word">啊~没有礼物</p>
+            <p class="word word1">~再接再厉~</p>
+            <img src="images/sad.png" class="sad"/>
+            <button class="btn-one" id="one">再来一次</button>
+        </div>
+    </div>
+    <div class="pop" id="gift-box">
+        <div class=" box-sorry box-gift">
+            <img src="images/open.png" class="open" id="open-gift">
+            <p class="title-top">优惠加油</p>
+            <p class="word suc-word">恭喜您获得了</p>
+            <p class="word word2">10元加油券</p>
+            <img src="images/quan.jpg" class="sad img-gift"/>
+        </div>
+    </div>
+    <div class="pop" id="no-chance">
+        <div class="box-sorry">
+            <img src="images/open2.png" class="open" id="open-chance">
+            <p class="word mar-top">很抱歉</p>
+            <p class="word">您的机会已用光</p>
+            <p class="word word1">~快去做任务吧~</p>
+            <img src="images/sad1.png" class="sad sad1"/>
+            <button class="btn-one" id="one">赚取机会</button>
+        </div>
+    </div>
+</section>
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/js.js"></script>
+</html>
